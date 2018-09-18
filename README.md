@@ -1,6 +1,9 @@
 # androidtest
 基于adb的安卓自动化操作
-使用：
+# 简介：项目依赖于uiautomator2, 由于有些场景下手机不支持安装apk， 所以参考大佬项目写了这个
+安装：
+pip install -U --pre uiautomator2
+pip install -U --pre androidtest
 
 导入包
 
