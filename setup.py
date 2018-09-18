@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='androidtest',
-    version='0.0.1',
+    version='0.0.2',
     packages=['androidtest'],
     url='https://github.com/lizongzi/androidtest',
     license='1.0',
