@@ -19,18 +19,29 @@ import time
 from time import sleep
 
 from androidtest import adbutils
+import shutil
+import base64
+import threading
+import io
 from retry import retry
 import six.moves.urllib.parse as urlparse
 from functools import partial
 import functools
+import warnings
+import humanize
+import xml.dom.minidom
 import progress.bar
 from subprocess import list2cmdline
 import logging
+from datetime import datetime
 import six
 HTTP_TIMEOUT = 60
 import hashlib
 import json
 from PIL import Image
+if six.PY2:
+    FileNotFoundError = OSError
+
 
 import xml.etree.cElementTree as ET
 
