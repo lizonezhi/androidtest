@@ -1,0 +1,6 @@
+aircv==1.4.6
+Pillow>=2.7.0
+numpy
+uiautomator2
+six
+requests

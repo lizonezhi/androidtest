@@ -30,6 +30,7 @@ import six
 HTTP_TIMEOUT = 60
 import hashlib
 import json
+from PIL import Image
 
 import xml.etree.cElementTree as ET
 
@@ -54,6 +55,11 @@ else:
 command = 'adb'
 class UiaError(Exception):
     pass
+class MyError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
 class GatewayError(UiaError):
     def __init__(self, response, description):
         self.response = response
