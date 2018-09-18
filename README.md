@@ -1,42 +1,51 @@
-# uitest
+# androidtest
 基于adb的安卓自动化操作
 使用：
 
 导入包
 
-import uitest
+import androidtest
+
 
 获得设备实例，入参（'12344321'）为序列号，一台设备可不填，作用是可以直接操作adb和shell命令
 
-a = uitest.Device('12344321')
+adb = androidtest.Device('12344321')
+
 
 获得设备ui实例，可操作设备ui控件
 
-d = uitest.connect('12344321')
+d = androidtest.connect('12344321')
+
 
 获取当前包名
 
-print(a.getCurrentPackageName())
+adb.getCurrentPackageName()
+
 
 获取剩余ram内存
 
-print(a.getMemFree())
+adb.getMemFree()
+
 
 强行停止当前应用
 
-a.force_stop(a.getCurrentPackageName())
+adb.force_stop(adb.getCurrentPackageName())
+
 
 获取第三方应用列表
 
-print(a.getThirdAppList())
+adb.getThirdAppList()
+
 
 根据本地的图片来点击设备
 
-print(a.find_icon_click('icon/screenshot.png'))
+adb.find_icon_click('icon/screenshot.png')
+
 
 获取设备信息
 
-print(d.device_info)
+d.device_info
+
 
 根据id来清除EditText输入框的内容
 
