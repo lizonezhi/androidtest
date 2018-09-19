@@ -1,6 +1,8 @@
 # androidtest
 基于adb的安卓自动化操作
 # 简介：项目依赖于uiautomator2, 由于有些场景下手机不支持安装apk， 所以参考@codeskyblue项目写了这个
+
+目前还有问题，等有时间再研究了，奇怪了本地都调试好， 一上传再下载更新就有问题了
 安装：
 
 pip install -U --pre uiautomator2
